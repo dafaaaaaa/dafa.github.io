@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daffa Taufikurohman</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <div class="w3-container w3-center">
+        <img src="bannercat.jpg" width=1950 height=350 >
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="animal('profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="animal('dogedog')">Doge Dog</button>
+        <button class="w3-bar-item w3-button" onclick="animal('nyancat')">Nyan Cat</button>
+        <button class="w3-bar-item w3-button" onclick="animal('pikachu1')">Pikachu</button>
+        <button class="w3-bar-item w3-button" onclick="animal('popcat')">Pop Cat</button>
+    </div>
+    <div id="profile" class="w3-container pet w3-center " style="display:none">
+        <h2>Profile</h2>
+        <p>Nim  : 10121066</p>
+        <p>Nama : Daffa Taufikurohman</p>
+        <p>Kelas: IF-2</p>
+    </div>
+    <div id="dogedog" class="w3-container pet w3-center w3-animate-fading" style="display:none">
+        <h2>Doge Dog</h2>
+        <img src="doge.png" style="width: 500px;">
+    </div>
+    <div id="nyancat" class="w3-container pet w3-center w3-animate-bottom" style="display:none">
+        <h2>Nyan Cat</h2>
+        <img src="nyancat.png" style="width: 500px;">
+    </div>
+    <div id="pikachu1" class="w3-container pet w3-center w3-animate-top" style="display:none">
+        <h2>Pikachu</h2>
+        <img src="pikachu.jpg" style="width: 500px;">
+    </div>
+    <div id="popcat" class="w3-container pet w3-center w3-animate-zoom" style="display:none">
+        <h2>Pop Cat</h2>
+        <img src="popcat.jpg" style="width: auto;">
+    </div>
+    <script>
+    function animal(animalname) {
+        var i;
+        var x = document.getElementsByClassName("pet");
+            for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+            }
+        document.getElementById(animalname).style.display = "block"; 
+        }
+    </script>
+</body>
+</html>
